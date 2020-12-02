@@ -1,0 +1,45 @@
+<?php 
+	$fname=$_POST['fname'];
+	if($fname=="")
+	{
+		echo "name is req";
+	}
+	$lname=$_POST['lname'];
+	$dob=$_POST['trip-start'];
+	$email=$_POST['email'];
+	$m_no=$_POST['mno'];
+	if(isset($_POST['gender']))
+	{
+	$gndr=$_POST['gender'];
+	}
+	else
+	{
+			echo "gender is required";
+	}
+	$adrs=$_POST['address'];
+	$city=$_POST['city'];
+	$pin_cd=$_POST['PIN_code'];
+	$state=$_POST['State'];
+	$cntry=$_POST['cntry'];
+	if(isset($_POST['hobbies']))
+	{
+		$hobbies=$_POST['hobbies'];
+		$hobbies1=implode(",",$hobbies);
+	}
+	else
+	{
+		$hobbies1='';
+	}
+	$x_percnt=$_POST['percentage1'];
+	$xii_percnt=$_POST['percentage2'];
+	$grad_percnt=$_POST['percentage3'];
+	$mas_percnt=$_POST['percentage4'];
+	if(isset($_POST['gender']))
+	{
+		$course=$_POST['course'];
+	}
+	else
+	{
+		echo "course is required";
+	}
+?>
